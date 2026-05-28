@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Tiny Chaos Factory">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a1f4d"/>
+      <stop offset="100%" stop-color="#120b22"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <rect x="10" y="30" width="44" height="10" rx="3" fill="#241b33" stroke="#845eff" stroke-width="2"/>
+  <circle cx="22" cy="35" r="7" fill="#8d8aa3"/>
+  <rect x="34" y="28" width="12" height="12" rx="2" fill="#5cb4ff"/>
+  <path d="M48 24 L56 36 L40 36 Z" fill="#7dffb2"/>
+  <circle cx="50" cy="18" r="4" fill="#ffe27a" opacity="0.9"/>
+</svg>
