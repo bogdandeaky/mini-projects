@@ -876,6 +876,15 @@ function canvasToSlot(x) {
   return state.slots.findIndex((_, index) => Math.abs(x - slotX(index)) < 36);
 }
 
+canvas.addEventListener("touchstart", (event) => {
+  event.preventDefault();
+  const touch = event.touches[0];
+  canvas.dispatchEvent(new MouseEvent("click", {
+    clientX: touch.clientX,
+    clientY: touch.clientY
+  }));
+}, { passive: false });
+
 canvas.addEventListener("click", (event) => {
   if (state.phase === "menu") {
     startRun();
